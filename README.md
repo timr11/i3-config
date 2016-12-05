@@ -1,8 +1,4 @@
 # i3-config
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ <br />
-//////////tromansk///////////// <br />
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ <br />
-
 These are my i3 window manager configuration files.  
 I set these up assuming Spotify is installed, changes include:  
 1. Font is now San Francisco size 13  
