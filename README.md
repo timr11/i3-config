@@ -5,4 +5,7 @@ I set these up assuming Spotify is installed, changes include:
 2. Icons added to workspace tabs  
 3. Movement of focus from workspace to workspace is changed to keys: h,j,k,l, as opposed  
    to the standard j,k,l,;, to replicate movement in Vim.  
-4. Vim settings are configured with Solarized colour scheme.
+4. Vim settings are configured with Solarized colour scheme.  
+5. Bottom bar is configured with i3blocks
+
+To install i3blocks, type `sudo apt-get install i3blocks`  
