@@ -8,4 +8,9 @@ I set these up assuming Spotify is installed, changes include:
 4. Vim settings are configured with Solarized colour scheme.  
 5. Bottom bar is configured with i3blocks
 
-To install i3blocks, type `sudo apt-get install i3blocks`  
+To install necessary software type  
+`sudo apt-get install feh i3blocks rofi compton`  
+  
+You may need to modify the padding in the .vimrc file, it will work based on screen  
+size, so just check by increasing/decreasing padding value, save and press mod+r to  
+restart the configuration, then try it out by pressing mod+d.
