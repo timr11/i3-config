@@ -2,13 +2,33 @@ autocmd vimenter * NERDTree
 autocmd VimEnter * wincmd p
 autocmd FileType python nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
 map <C-n> :NERDTreeToggle<CR>
-call pathogen#infect()
 syntax enable
 set nu
 set mouse=a
 set clipboard=unnamed
 set encoding=utf-8
 
+
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'tmhedberg/SimpylFold'
+Plugin 'vim-scripts/indentpython.vim'
+Plugin 'scrooloose/syntastic'
+Plugin 'nvie/vim-flake8'
+Plugin 'jnurmine/Zenburn'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+
+call vundle#end()
 
 function! NERDTreeQuit()
   redir => buffersoutput
@@ -33,26 +53,6 @@ function! NERDTreeQuit()
   endif
 endfunction
 autocmd WinEnter * call NERDTreeQuit()
-
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-Plugin 'gmarik/Vundle.vim'
-
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'tmhedberg/SimpylFold'
-Plugin 'vim-scripts/indentpython.vim'
-Plugin 'scrooloose/syntastic'
-Plugin 'nvie/vim-flake8'
-Plugin 'jnurmine/Zenburn'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'scrooloose/nerdtree'
-Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'kien/ctrlp.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-
-call vundle#end()
 
 filetype plugin indent on
 
@@ -119,3 +119,11 @@ endif
 call togglebg#map("<F5>")
 
 let NERDTree=['\.pyc$'. '\~$'] "ignore files in NERDTree
+
+" Tab specific option
+set tabstop=8                   "A tab is 8 spaces
+set expandtab                   "Always uses spaces instead of tabs
+set softtabstop=4               "Insert 4 spaces when tab is pressed
+set shiftwidth=4                "An indent is 4 spaces
+set shiftround                  "Round indent to nearest shiftwidth multiple
+
