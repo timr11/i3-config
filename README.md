@@ -16,5 +16,5 @@ Also, set up special characters for bottom block with Font-Awesome, at https://g
 To set up, clone the repository from link above, go into the fonts directory and type `mkdir ~/.fonts`, followed by `mv ./*.ttf ~/.fonts`. Then, check to see that you did a good job by typing `cd ~/.fonts && ls -alh`.
 
 Extra downloads:  
-Spotify for Linux: https://www.spotify.com/ca-en/download/linux/
+Spotify for Linux: https://www.spotify.com/ca-en/download/linux/  
 Chrome for Linux: https://www.google.ca/chrome/browser/desktop/
