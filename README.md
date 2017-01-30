@@ -1,6 +1,8 @@
 # i3-config
 These are my i3 window manager configuration files.  
   
+The config file is influenced greatly by the i3 setup video tutorial by Code Cast, which can be found at https://www.youtube.com/watch?v=j1I63wGcvU4
+  
 The settings.ini file is located in the `~/.config/gtk-3.0` directory.  
 The config file goes into the `~/.config/i3/` directory.  
 .vimrc goes into home directory (`~/`), as usual.  
