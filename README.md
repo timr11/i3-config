@@ -6,6 +6,7 @@ The config file is influenced greatly by the i3 setup video tutorial by Code Cas
 The settings.ini file is located in the `~/.config/gtk-3.0` directory.  
 The config file goes into the `~/.config/i3/` directory.  
 .vimrc goes into home directory (`~/`), as usual.  
+  
 I set these up assuming Spotify and Chrome is installed, changes include:  
 1. Font is now San Francisco size 12  
 2. Icons added to workspace tabs  
