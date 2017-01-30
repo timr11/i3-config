@@ -1,11 +1,15 @@
 # i3-config
 These are my i3 window manager configuration files.  
+  
+The settings.ini file is located in the `~/.config/gtk-3.0` directory.  
+The config file goes into the `~/.config/i3/` directory.  
+.vimrc goes into home directory (`~/`), as usual.  
 I set these up assuming Spotify and Chrome is installed, changes include:  
-1. Font is now San Francisco size 13  
+1. Font is now San Francisco size 12  
 2. Icons added to workspace tabs  
 3. Movement of focus from workspace to workspace is changed to keys: h,j,k,l, as opposed to the standard j,k,l,;, to replicate movement in Vim.  
 4. Vim settings are configured with Solarized colour scheme, use the `<f5>` key to toggle between that and the Zenburn colour scheme.  
-5. Bottom bar is configured with i3blocks  
+5. Bottom bar colour is changed, borders are removed, and the xfce4-panel is included at the top (I got used to it, it does the job well).  
   
 To install necessary software type  
 `sudo apt-get install feh i3blocks rofi compton scrot`  
